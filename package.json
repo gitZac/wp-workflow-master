@@ -1,0 +1,29 @@
+{
+  "name": "workflow-basic",
+  "version": "1.0.0",
+  "description": "Basic workflow, npm build",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gitZac/workflow.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gitZac/workflow/issues"
+  },
+  "homepage": "https://github.com/gitZac/workflow#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-if": "^3.0.0",
+    "gulp-sass": "^4.0.2",
+    "yargs": "^13.3.0"
+  }
+}
