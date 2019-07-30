@@ -5,6 +5,7 @@ import cleanCSS from 'gulp-clean-css';
 import gulpif from 'gulp-if';
 import sourcemaps from 'gulp-sourcemaps';
 import imagemin from 'gulp-imagemin';
+import del from 'del';
 
 const PROD = yargs.argv.prod;
 
@@ -30,7 +31,8 @@ export const styles = (done) =>{
 }
 
 export const watch = () => {
-    gulp.watch('src/assets/scss/**/*.scss', styles)
+    gulp.watch('src/assets/scss/**/*.scss', styles);
+    gulp.watch(paths.images.src, images);
 }
 
 export const images = () => {
@@ -38,3 +40,13 @@ export const images = () => {
         .pipe(gulpif(PROD, imagemin()))
         .pipe(gulp.dest(paths.images.dest));
 }
+
+export const clean = () => {
+    return del(['dist']);
+}
+
+export const build = gulp.series(clean, gulp.parallel(styles, images));
+
+export const dev = gulp.series(clean, gulp.parallel(styles, images), watch);
+
+export default dev;
