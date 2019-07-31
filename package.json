@@ -17,8 +17,12 @@
     "url": "https://github.com/gitZac/workflow/issues"
   },
   "homepage": "https://github.com/gitZac/workflow#readme",
-  "dependencies": {},
+  "dependencies": {
+    "babel-loader": "^7.1.5",
+    "jquery": "^3.4.1"
+  },
   "devDependencies": {
+    "babel-core": "^6.26.3",
     "babel-preset-env": "^1.7.0",
     "babel-register": "^6.26.0",
     "del": "^5.0.0",
@@ -28,6 +32,8 @@
     "gulp-imagemin": "^6.0.0",
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.5",
+    "vinyl-named": "^1.1.0",
+    "webpack-stream": "^5.2.1",
     "yargs": "^13.3.0"
   }
 }
