@@ -8,8 +8,22 @@ import imagemin from 'gulp-imagemin';
 import del from 'del';
 import webpack from 'webpack-stream';
 import named from 'vinyl-named';
+import browserSync from 'browser-sync';
 
+const server = browserSync.create();
 const PROD = yargs.argv.prod;
+
+export const serve = (done) => {
+    server.init({
+        proxy: "https://test2.dev.cc/"
+    });
+    done();
+}
+
+export const reload = (done) => {
+    server.reload();
+    done();
+}
 
 const paths = { //refactored style paths.
     styles: {
@@ -33,13 +47,15 @@ export const styles = (done) =>{
             .pipe(sass().on('error', sass.logError))
         .pipe(gulpif(!PROD, sourcemaps.write()))
         .pipe(gulp.dest(paths.styles.dest))
+        .pipe(server.stream());
     done();
 }
 
 export const watch = () => {
     gulp.watch('src/assets/scss/**/*.scss', styles);
-    gulp.watch('src/assets/js/**/*.js', scripts);
-    gulp.watch(paths.images.src, images);
+    gulp.watch('src/assets/js/**/*.js', gulp.series(scripts, reload));
+    gulp.watch('**/*.php',reload);
+    gulp.watch(paths.images.src,  gulp.series(images, reload));
 }
 
 export const images = () => {
@@ -84,6 +100,6 @@ export const scripts = (done) => {
 
 export const build = gulp.series(clean, gulp.parallel(styles, scripts, images));
 
-export const dev = gulp.series(clean, gulp.parallel(styles, scripts, images), watch);
+export const dev = gulp.series(clean, gulp.parallel(styles, scripts, images), serve, watch);
 
 export default dev;

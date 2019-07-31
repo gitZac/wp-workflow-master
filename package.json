@@ -25,6 +25,7 @@
     "babel-core": "^6.26.3",
     "babel-preset-env": "^1.7.0",
     "babel-register": "^6.26.0",
+    "browser-sync": "^2.26.7",
     "del": "^5.0.0",
     "gulp": "^4.0.2",
     "gulp-clean-css": "^4.2.0",
