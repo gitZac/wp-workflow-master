@@ -9,6 +9,7 @@ import del from 'del';
 import webpack from 'webpack-stream';
 import named from 'vinyl-named';
 import browserSync from 'browser-sync';
+import zip from 'gulp-zip';
 
 const server = browserSync.create();
 const PROD = yargs.argv.prod;
@@ -37,6 +38,10 @@ const paths = { //refactored style paths.
     images: {
         src: 'src/assets/images/**/*.{jpg,jpeg,png,svg,gif}',
         dest: 'dist/assets/images'
+    },
+    package:{
+        src: ['**/*', '!src', '!src/assets{,/**}', '!.vscode', '!node_modules{,/**}', '!packaged{,/**}', '!.babelrc', '!.gitignore', '!gulpfile.babel.js', '!package.json', '!package-lock.json' ],
+        dest:'packaged'
     }
 }
 
@@ -96,6 +101,12 @@ export const scripts = (done) => {
         .pipe(gulp.dest(paths.scripts.dest))
     
         done();
+}
+
+export const compress = () => {
+    return gulp.src(paths.package.src)
+        .pipe(zip('_themename.zip'))
+        .pipe(gulp.dest(paths.package.dest));
 }
 
 export const build = gulp.series(clean, gulp.parallel(styles, scripts, images));

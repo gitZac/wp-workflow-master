@@ -33,6 +33,7 @@
     "gulp-imagemin": "^6.0.0",
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.5",
+    "gulp-zip": "^5.0.0",
     "vinyl-named": "^1.1.0",
     "webpack-stream": "^5.2.1",
     "yargs": "^13.3.0"
