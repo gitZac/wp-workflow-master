@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: HTML5 Blank WordPress Theme\n"
+"Project-Id-Version: _themename Blank WordPress Theme\n"
 "POT-Creation-Date: 2013-12-5 10:50+0000\n"
 "PO-Revision-Date: \n"
 "Last-Translator: \n"
@@ -117,7 +117,7 @@ msgid "View Article"
 msgstr "Bekijk Artikel"
 
 #: ../functions.php:438 ../functions.php:439
-msgid "HTML5 Blank Custom Post"
+msgid "_themename Blank Custom Post"
 msgstr "Persoonlijk Bericht"
 
 #: ../functions.php:440
@@ -125,7 +125,7 @@ msgid "Add New"
 msgstr "Voeg een nieuw toe"
 
 #: ../functions.php:441
-msgid "Add New HTML5 Blank Custom Post"
+msgid "Add New _themename Blank Custom Post"
 msgstr "Voeg een nieuw persoonlijk bericht toe"
 
 #: ../functions.php:442
@@ -133,27 +133,27 @@ msgid "Edit"
 msgstr "Bewerken"
 
 #: ../functions.php:443
-msgid "Edit HTML5 Blank Custom Post"
+msgid "Edit _themename Blank Custom Post"
 msgstr "Bewerk het persoonlijk bericht"
 
 #: ../functions.php:444
-msgid "New HTML5 Blank Custom Post"
+msgid "New _themename Blank Custom Post"
 msgstr "Nieuw persoonlijk bericht"
 
 #: ../functions.php:445 ../functions.php:446
-msgid "View HTML5 Blank Custom Post"
+msgid "View _themename Blank Custom Post"
 msgstr "Bekijk berichten"
 
 #: ../functions.php:447
-msgid "Search HTML5 Blank Custom Post"
+msgid "Search _themename Blank Custom Post"
 msgstr "Zoeken in berichten"
 
 #: ../functions.php:448
-msgid "No HTML5 Blank Custom Posts found"
+msgid "No _themename Blank Custom Posts found"
 msgstr "Geen Bericht gevonden"
 
 #: ../functions.php:449
-msgid "No HTML5 Blank Custom Posts found in Trash"
+msgid "No _themename Blank Custom Posts found in Trash"
 msgstr "Geen Bericht gevonden in de prullenbak"
 
 #: ../index.php:6

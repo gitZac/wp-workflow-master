@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: HTML5 Blank WordPress Theme\n"
+"Project-Id-Version: _themename Blank WordPress Theme\n"
 "POT-Creation-Date: 2012-10-18 00:53+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Ioan Virag <ioan@ioanvirag.com>\n"
@@ -117,45 +117,45 @@ msgid "View Article"
 msgstr "Vezi Articol"
 
 #: ../functions.php:438 ../functions.php:439
-msgid "HTML5 Blank Custom Post"
-msgstr "Tip de postare customizată HTML5 Blank"
+msgid "_themename Blank Custom Post"
+msgstr "Tip de postare customizată _themename Blank"
 
 #: ../functions.php:440
 msgid "Add New"
 msgstr "Adaugă Nou"
 
 #: ../functions.php:441
-msgid "Add New HTML5 Blank Custom Post"
-msgstr "Adaugă un nou tip de postare customizată HTML5 Blank"
+msgid "Add New _themename Blank Custom Post"
+msgstr "Adaugă un nou tip de postare customizată _themename Blank"
 
 #: ../functions.php:442
 msgid "Edit"
 msgstr "Editare"
 
 #: ../functions.php:443
-msgid "Edit HTML5 Blank Custom Post"
-msgstr "Editare postare customizată de tip HTML5 Blank"
+msgid "Edit _themename Blank Custom Post"
+msgstr "Editare postare customizată de tip _themename Blank"
 
 #: ../functions.php:444
-msgid "New HTML5 Blank Custom Post"
-msgstr "Nouă postare customizată de tip HTML5 Blank"
+msgid "New _themename Blank Custom Post"
+msgstr "Nouă postare customizată de tip _themename Blank"
 
 #: ../functions.php:445 ../functions.php:446
-msgid "View HTML5 Blank Custom Post"
-msgstr "Vezi postare customizată de tip HTML5 Blank"
+msgid "View _themename Blank Custom Post"
+msgstr "Vezi postare customizată de tip _themename Blank"
 
 #: ../functions.php:447
-msgid "Search HTML5 Blank Custom Post"
-msgstr "Caută postare customizată de tip HTML5 Blank"
+msgid "Search _themename Blank Custom Post"
+msgstr "Caută postare customizată de tip _themename Blank"
 
 #: ../functions.php:448
-msgid "No HTML5 Blank Custom Posts found"
-msgstr "Nu s-a găsit nici o postare customizată de tip HTML5 Blank"
+msgid "No _themename Blank Custom Posts found"
+msgstr "Nu s-a găsit nici o postare customizată de tip _themename Blank"
 
 #: ../functions.php:449
-msgid "No HTML5 Blank Custom Posts found in Trash"
+msgid "No _themename Blank Custom Posts found in Trash"
 msgstr ""
-"Nu s-a găsit nici o postare customizată de tip HTML5 Blank în coşul de gunoi"
+"Nu s-a găsit nici o postare customizată de tip _themename Blank în coşul de gunoi"
 
 #: ../index.php:6
 msgid "Latest Posts"

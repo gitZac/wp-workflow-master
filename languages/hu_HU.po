@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: HTML5 Blank WordPress Theme\n"
+"Project-Id-Version: _themename Blank WordPress Theme\n"
 "POT-Creation-Date: 2013-09-18 00:26+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Sallay Arnold <arnold@sallay.info>\n"
@@ -122,44 +122,44 @@ msgid "(Edit)"
 msgstr "(Szerkesztés)"
 
 #: ../functions.php:411 ../functions.php:412
-msgid "HTML5 Blank Custom Post"
-msgstr "HTML5 Blank Egyedi Tartalom"
+msgid "_themename Blank Custom Post"
+msgstr "_themename Blank Egyedi Tartalom"
 
 #: ../functions.php:413
 msgid "Add New"
 msgstr "Új hozzáadása"
 
 #: ../functions.php:414
-msgid "Add New HTML5 Blank Custom Post"
-msgstr "Új egyedi HTML5 Blank tartalom hozzáadása"
+msgid "Add New _themename Blank Custom Post"
+msgstr "Új egyedi _themename Blank tartalom hozzáadása"
 
 #: ../functions.php:415
 msgid "Edit"
 msgstr "Szerkesztés"
 
 #: ../functions.php:416
-msgid "Edit HTML5 Blank Custom Post"
-msgstr "HTML5 Blank egyedi tartalom szerkesztése"
+msgid "Edit _themename Blank Custom Post"
+msgstr "_themename Blank egyedi tartalom szerkesztése"
 
 #: ../functions.php:417
-msgid "New HTML5 Blank Custom Post"
-msgstr "Új HTML5 Blank egyedi tartalom"
+msgid "New _themename Blank Custom Post"
+msgstr "Új _themename Blank egyedi tartalom"
 
 #: ../functions.php:418 ../functions.php:419
-msgid "View HTML5 Blank Custom Post"
-msgstr "HTML5 Blank egyedi tartalom megtekintése"
+msgid "View _themename Blank Custom Post"
+msgstr "_themename Blank egyedi tartalom megtekintése"
 
 #: ../functions.php:420
-msgid "Search HTML5 Blank Custom Post"
-msgstr "HTML5 Blank egyedi tartalomak keresése"
+msgid "Search _themename Blank Custom Post"
+msgstr "_themename Blank egyedi tartalomak keresése"
 
 #: ../functions.php:421
-msgid "No HTML5 Blank Custom Posts found"
-msgstr "Nincs HTML5 Blank egyedi tartalom"
+msgid "No _themename Blank Custom Posts found"
+msgstr "Nincs _themename Blank egyedi tartalom"
 
 #: ../functions.php:422
-msgid "No HTML5 Blank Custom Posts found in Trash"
-msgstr "Nincs HTML5 Blank egyedi tartalom a kukában"
+msgid "No _themename Blank Custom Posts found in Trash"
+msgstr "Nincs _themename Blank egyedi tartalom a kukában"
 
 #: ../index.php:6
 msgid "Latest Posts"

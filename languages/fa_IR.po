@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: HTML5 Blank WordPress Theme\n"
+"Project-Id-Version: _themename Blank WordPress Theme\n"
 "POT-Creation-Date: 2016-03-05 23:59+0330\n"
 "PO-Revision-Date: \n"
 "Language-Team: \n"
@@ -121,7 +121,7 @@ msgid "(Edit)"
 msgstr "(ویرایش)"
 
 #: ../functions.php:411 ../functions.php:412
-msgid "HTML5 Blank Custom Post"
+msgid "_themename Blank Custom Post"
 msgstr "پست سفارشی"
 
 #: ../functions.php:413
@@ -129,7 +129,7 @@ msgid "Add New"
 msgstr "افزودن"
 
 #: ../functions.php:414
-msgid "Add New HTML5 Blank Custom Post"
+msgid "Add New _themename Blank Custom Post"
 msgstr "افزودن پست سفارشی"
 
 #: ../functions.php:415
@@ -137,27 +137,27 @@ msgid "Edit"
 msgstr "ویرایش"
 
 #: ../functions.php:416
-msgid "Edit HTML5 Blank Custom Post"
+msgid "Edit _themename Blank Custom Post"
 msgstr "ویرایش پست سفارشی"
 
 #: ../functions.php:417
-msgid "New HTML5 Blank Custom Post"
+msgid "New _themename Blank Custom Post"
 msgstr "پست سفارشی جدید"
 
 #: ../functions.php:418 ../functions.php:419
-msgid "View HTML5 Blank Custom Post"
+msgid "View _themename Blank Custom Post"
 msgstr "نمایش پست سفارشی"
 
 #: ../functions.php:420
-msgid "Search HTML5 Blank Custom Post"
+msgid "Search _themename Blank Custom Post"
 msgstr "جستجوی پست سفارشی"
 
 #: ../functions.php:421
-msgid "No HTML5 Blank Custom Posts found"
+msgid "No _themename Blank Custom Posts found"
 msgstr "پست سفارشی‌ای پیدا نشد"
 
 #: ../functions.php:422
-msgid "No HTML5 Blank Custom Posts found in Trash"
+msgid "No _themename Blank Custom Posts found in Trash"
 msgstr "پست سفارشی‌ای در زباله‌دان پیدا نشد"
 
 #: ../index.php:6

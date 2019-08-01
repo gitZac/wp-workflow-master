@@ -1,5 +1,5 @@
-# Translation of HTML5Blank (thema) in Cymraeg
-# This file is distributed under the same license as the HTML5Blank (thema) package.
+# Translation of _themename (thema) in Cymraeg
+# This file is distributed under the same license as the _themename (thema) package.
 msgid ""
 msgstr ""
 "PO-Revision-Date: 2015-05-22 11:50:18+0000\n"
@@ -8,7 +8,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n==1) ? 0 : (n==2) ? 1 : (n != 8 && n != 11) ? 2 : 3;\n"
 "X-Generator: GlotPress/0.1\n"
-"Project-Id-Version: HTML5Blank (thema)\n"
+"Project-Id-Version: _themename (thema)\n"
 
 #: ../404.php:9
 msgid "Page not found"
@@ -112,44 +112,44 @@ msgid "(Edit)"
 msgstr "(Golygu)"
 
 #: ../functions.php:411 ../functions.php:412
-msgid "HTML5 Blank Custom Post"
-msgstr "Cofnod Cyfaddas HTML5 Blank"
+msgid "_themename Blank Custom Post"
+msgstr "Cofnod Cyfaddas _themename Blank"
 
 #: ../functions.php:413
 msgid "Add New"
 msgstr "Ychwanegu yn Newydd"
 
 #: ../functions.php:414
-msgid "Add New HTML5 Blank Custom Post"
-msgstr "Ychwanegu Cofnod Cyfaddas HTML5 Blank Newydd"
+msgid "Add New _themename Blank Custom Post"
+msgstr "Ychwanegu Cofnod Cyfaddas _themename Blank Newydd"
 
 #: ../functions.php:415
 msgid "Edit"
 msgstr "Golygu"
 
 #: ../functions.php:416
-msgid "Edit HTML5 Blank Custom Post"
-msgstr "Golygu Cofnod Cyfaddas HTML5 Blank"
+msgid "Edit _themename Blank Custom Post"
+msgstr "Golygu Cofnod Cyfaddas _themename Blank"
 
 #: ../functions.php:417
-msgid "New HTML5 Blank Custom Post"
-msgstr "Cofnod Cyfaddas HTML5 Blank Newydd"
+msgid "New _themename Blank Custom Post"
+msgstr "Cofnod Cyfaddas _themename Blank Newydd"
 
 #: ../functions.php:418 ../functions.php:419
-msgid "View HTML5 Blank Custom Post"
-msgstr "Gweld Cofnod Cyfaddas HTML5 Blank"
+msgid "View _themename Blank Custom Post"
+msgstr "Gweld Cofnod Cyfaddas _themename Blank"
 
 #: ../functions.php:420
-msgid "Search HTML5 Blank Custom Post"
-msgstr "Chwilio Cofnod Cyfaddas HTML5 Blank"
+msgid "Search _themename Blank Custom Post"
+msgstr "Chwilio Cofnod Cyfaddas _themename Blank"
 
 #: ../functions.php:421
-msgid "No HTML5 Blank Custom Posts found"
-msgstr "Ni ddaethpwyd o hyd i unrhyw Gofnod Cyfaddas HTML5 Blank"
+msgid "No _themename Blank Custom Posts found"
+msgstr "Ni ddaethpwyd o hyd i unrhyw Gofnod Cyfaddas _themename Blank"
 
 #: ../functions.php:422
-msgid "No HTML5 Blank Custom Posts found in Trash"
-msgstr "Ni ddaethpwyd o hyd i unrhyw Gofnod Cyfaddas HTML5 Blank yn y Bin Sbwriel"
+msgid "No _themename Blank Custom Posts found in Trash"
+msgstr "Ni ddaethpwyd o hyd i unrhyw Gofnod Cyfaddas _themename Blank yn y Bin Sbwriel"
 
 #: ../index.php:6
 msgid "Latest Posts"

@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: HTML5 Blank WordPress Theme\n"
+"Project-Id-Version: _themename Blank WordPress Theme\n"
 "POT-Creation-Date: 2014-01-08 00:08+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Antoine Lorence <antoine.lorence@gmail.com>\n"
@@ -122,7 +122,7 @@ msgid "(Edit)"
 msgstr "(Éditer)"
 
 #: ../functions.php:411 ../functions.php:412
-msgid "HTML5 Blank Custom Post"
+msgid "_themename Blank Custom Post"
 msgstr "Article personnalisé"
 
 #: ../functions.php:413
@@ -130,7 +130,7 @@ msgid "Add New"
 msgstr "Ajouter nouveau"
 
 #: ../functions.php:414
-msgid "Add New HTML5 Blank Custom Post"
+msgid "Add New _themename Blank Custom Post"
 msgstr "Ajouter un article personnalisé"
 
 #: ../functions.php:415
@@ -138,27 +138,27 @@ msgid "Edit"
 msgstr "Éditer"
 
 #: ../functions.php:416
-msgid "Edit HTML5 Blank Custom Post"
+msgid "Edit _themename Blank Custom Post"
 msgstr "Éditer l'article personnalisé"
 
 #: ../functions.php:417
-msgid "New HTML5 Blank Custom Post"
+msgid "New _themename Blank Custom Post"
 msgstr "Nouvel article personnalisé"
 
 #: ../functions.php:418 ../functions.php:419
-msgid "View HTML5 Blank Custom Post"
+msgid "View _themename Blank Custom Post"
 msgstr "Voir l'article personnalisé"
 
 #: ../functions.php:420
-msgid "Search HTML5 Blank Custom Post"
+msgid "Search _themename Blank Custom Post"
 msgstr "Rechercher un article personnalisé"
 
 #: ../functions.php:421
-msgid "No HTML5 Blank Custom Posts found"
+msgid "No _themename Blank Custom Posts found"
 msgstr "Aucun article personnalisé trouvé"
 
 #: ../functions.php:422
-msgid "No HTML5 Blank Custom Posts found in Trash"
+msgid "No _themename Blank Custom Posts found in Trash"
 msgstr "Aucun article personnalisé trouvé dans la corbeille"
 
 #: ../index.php:6

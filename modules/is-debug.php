@@ -1,3 +1,3 @@
 <?php
-    define('HTML5_DEBUG', true);
+    define('_themename_DEBUG', true);
 ?>

@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: HTML5 Blank WordPress Theme\n"
+"Project-Id-Version: _themename Blank WordPress Theme\n"
 "POT-Creation-Date: 2012-10-18 00:53+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: wesllei henrique <wesllei.h@gmail.com>\n"
@@ -117,44 +117,44 @@ msgid "View Article"
 msgstr "Ver artigo"
 
 #: ../functions.php:438 ../functions.php:439
-msgid "HTML5 Blank Custom Post"
-msgstr "HTML5 Blank Custom Post"
+msgid "_themename Blank Custom Post"
+msgstr "_themename Blank Custom Post"
 
 #: ../functions.php:440
 msgid "Add New"
 msgstr "Adicionar novo"
 
 #: ../functions.php:441
-msgid "Add New HTML5 Blank Custom Post"
-msgstr "Adicionar novo HTML5 Blank Custom Post"
+msgid "Add New _themename Blank Custom Post"
+msgstr "Adicionar novo _themename Blank Custom Post"
 
 #: ../functions.php:442
 msgid "Edit"
 msgstr "Editar"
 
 #: ../functions.php:443
-msgid "Edit HTML5 Blank Custom Post"
-msgstr "Editar HTML5 Blank Custom Post"
+msgid "Edit _themename Blank Custom Post"
+msgstr "Editar _themename Blank Custom Post"
 
 #: ../functions.php:444
-msgid "New HTML5 Blank Custom Post"
-msgstr "Novo HTML5 Blank Custom Post"
+msgid "New _themename Blank Custom Post"
+msgstr "Novo _themename Blank Custom Post"
 
 #: ../functions.php:445 ../functions.php:446
-msgid "View HTML5 Blank Custom Post"
-msgstr "Ver HTML5 Blank Custom Post"
+msgid "View _themename Blank Custom Post"
+msgstr "Ver _themename Blank Custom Post"
 
 #: ../functions.php:447
-msgid "Search HTML5 Blank Custom Post"
-msgstr "Pesquisar HTML5 Blank Custom Post"
+msgid "Search _themename Blank Custom Post"
+msgstr "Pesquisar _themename Blank Custom Post"
 
 #: ../functions.php:448
-msgid "No HTML5 Blank Custom Posts found"
-msgstr "Nenhum HTML5 Blank Custom Post encontrado"
+msgid "No _themename Blank Custom Posts found"
+msgstr "Nenhum _themename Blank Custom Post encontrado"
 
 #: ../functions.php:449
-msgid "No HTML5 Blank Custom Posts found in Trash"
-msgstr "Nenhum HTML5 Blank Custom Post na lixeira"
+msgid "No _themename Blank Custom Posts found in Trash"
+msgstr "Nenhum _themename Blank Custom Post na lixeira"
 
 #: ../index.php:6
 msgid "Latest Posts"

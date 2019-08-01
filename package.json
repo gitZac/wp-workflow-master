@@ -5,7 +5,9 @@
   "main": "gulpfile.js",
   "scripts": {
     "start": "gulp",
-    "build": "gulp build --prod"
+    "build": "gulp build --prod",
+    "bundle": "gulp bundle --prod"
+
   },
   "repository": {
     "type": "git",
@@ -31,6 +33,7 @@
     "gulp-clean-css": "^4.2.0",
     "gulp-if": "^3.0.0",
     "gulp-imagemin": "^6.0.0",
+    "gulp-replace": "^1.0.0",
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.5",
     "gulp-zip": "^5.0.0",

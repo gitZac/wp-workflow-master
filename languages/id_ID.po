@@ -109,44 +109,44 @@ msgid "(Edit)"
 msgstr "(Ubah)"
 
 #: ../functions.php:411 ../functions.php:412
-msgid "HTML5 Blank Custom Post"
-msgstr "Postingan HTML5 custom kosong"
+msgid "_themename Blank Custom Post"
+msgstr "Postingan _themename custom kosong"
 
 #: ../functions.php:413
 msgid "Add New"
 msgstr "Tambah baru"
 
 #: ../functions.php:414
-msgid "Add New HTML5 Blank Custom Post"
-msgstr "Tambah postingan HTML5 custom kosong baru"
+msgid "Add New _themename Blank Custom Post"
+msgstr "Tambah postingan _themename custom kosong baru"
 
 #: ../functions.php:415
 msgid "Edit"
 msgstr "Ubah"
 
 #: ../functions.php:416
-msgid "Edit HTML5 Blank Custom Post"
-msgstr "Ubah Postingan HTML5 custom kosong"
+msgid "Edit _themename Blank Custom Post"
+msgstr "Ubah Postingan _themename custom kosong"
 
 #: ../functions.php:417
-msgid "New HTML5 Blank Custom Post"
-msgstr "Postingan HTML5 custom kosong baru"
+msgid "New _themename Blank Custom Post"
+msgstr "Postingan _themename custom kosong baru"
 
 #: ../functions.php:418 ../functions.php:419
-msgid "View HTML5 Blank Custom Post"
-msgstr "LIhat postingan HTML5 custom kosong"
+msgid "View _themename Blank Custom Post"
+msgstr "LIhat postingan _themename custom kosong"
 
 #: ../functions.php:420
-msgid "Search HTML5 Blank Custom Post"
-msgstr "Cari postingan HTML5 custom kosong"
+msgid "Search _themename Blank Custom Post"
+msgstr "Cari postingan _themename custom kosong"
 
 #: ../functions.php:421
-msgid "No HTML5 Blank Custom Posts found"
-msgstr "Tidak ada postingan HTML5 custom kosong yang ditemukan"
+msgid "No _themename Blank Custom Posts found"
+msgstr "Tidak ada postingan _themename custom kosong yang ditemukan"
 
 #: ../functions.php:422
-msgid "No HTML5 Blank Custom Posts found in Trash"
-msgstr "Tidak ada postingan HTML5 custom kosong yang ditemukan yang ditemukan di kotak sampah"
+msgid "No _themename Blank Custom Posts found in Trash"
+msgstr "Tidak ada postingan _themename custom kosong yang ditemukan yang ditemukan di kotak sampah"
 
 #: ../index.php:6
 msgid "Latest Posts"

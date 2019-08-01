@@ -4,7 +4,7 @@
 		<!-- section -->
 		<section>
 
-			<h1><?php esc_html_e( 'Tag Archive: ', 'html5blank' ); echo single_tag_title( '', false ); ?></h1>
+			<h1><?php esc_html_e( 'Tag Archive: ', '_themename' ); echo single_tag_title( '', false ); ?></h1>
 
 			<?php get_template_part( 'loop' ); ?>
 

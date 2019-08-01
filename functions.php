@@ -1,8 +1,8 @@
 <?php
 /**
- * Author: Robert DeVore | @deviorobert
- * URL: html5blank.com | @html5blank
- * Custom functions, support, custom post types and more.
+ * Author: Zac Taylor | @deviorobert
+ * URL: digitalzac.com 
+ * 
  */
 
 require_once 'modules/is-debug.php';
@@ -54,19 +54,19 @@ if ( function_exists( 'add_theme_support' ) ) {
     // Enables post and comment RSS feed links to head.
     add_theme_support( 'automatic-feed-links' );
 
-    // Enable HTML5 support.
-    add_theme_support( 'html5', array( 'comment-list', 'comment-form', 'search-form', 'gallery', 'caption' ) );
+    // Enable _themename support.
+    add_theme_support( '_themename', array( 'comment-list', 'comment-form', 'search-form', 'gallery', 'caption' ) );
 
     // Localisation Support.
-    load_theme_textdomain( 'html5blank', get_template_directory() . '/languages' );
+    load_theme_textdomain( '_themename', get_template_directory() . '/languages' );
 }
 
 /*------------------------------------*\
     Functions
 \*------------------------------------*/
 
-// HTML5 Blank navigation
-function html5blank_nav() {
+// _themename Blank navigation
+function _themename_nav() {
     wp_nav_menu(
     array(
         'theme_location'  => 'header-menu',
@@ -91,8 +91,8 @@ function html5blank_nav() {
 
 
 
-// Load HTML5 Blank conditional scripts
-function html5blank_conditional_scripts() {
+// Load _themename Blank conditional scripts
+function _themename_conditional_scripts() {
     if ( is_page( 'pagenamehere' ) ) {
         // Conditional script(s)
         wp_register_script( 'scriptname', get_template_directory_uri() . '/js/scriptname.js', array( 'jquery' ), '1.0.0' );
@@ -104,11 +104,11 @@ function html5blank_conditional_scripts() {
 
 
 
-// Register HTML5 Blank Navigation
-function register_html5_menu() {
+// Register _themename Blank Navigation
+function register__themename_menu() {
     register_nav_menus( array( // Using array to specify more menus if needed
-        'header-menu'  => esc_html( 'Header Menu', 'html5blank' ), // Main Navigation
-        'extra-menu'   => esc_html( 'Extra Menu', 'html5blank' ) // Extra Navigation if needed (duplicate as many as you need!)
+        'header-menu'  => esc_html( 'Header Menu', '_themename' ), // Main Navigation
+        'extra-menu'   => esc_html( 'Extra Menu', '_themename' ) // Extra Navigation if needed (duplicate as many as you need!)
     ) );
 }
 
@@ -156,8 +156,8 @@ function remove_width_attribute( $html ) {
 if ( function_exists( 'register_sidebar' ) ) {
     // Define Sidebar Widget Area 1
     register_sidebar( array(
-        'name'          => esc_html( 'Widget Area 1', 'html5blank' ),
-        'description'   => esc_html( 'Description for this widget-area...', 'html5blank' ),
+        'name'          => esc_html( 'Widget Area 1', '_themename' ),
+        'description'   => esc_html( 'Description for this widget-area...', '_themename' ),
         'id'            => 'widget-area-1',
         'before_widget' => '<div id="%1$s" class="%2$s">',
         'after_widget'  => '</div>',
@@ -167,8 +167,8 @@ if ( function_exists( 'register_sidebar' ) ) {
 
     // Define Sidebar Widget Area 2
     register_sidebar( array(
-        'name'          => esc_html( 'Widget Area 2', 'html5blank' ),
-        'description'   => esc_html( 'Description for this widget-area...', 'html5blank' ),
+        'name'          => esc_html( 'Widget Area 2', '_themename' ),
+        'description'   => esc_html( 'Description for this widget-area...', '_themename' ),
         'id'            => 'widget-area-2',
         'before_widget' => '<div id="%1$s" class="%2$s">',
         'after_widget'  => '</div>',
@@ -190,7 +190,7 @@ function my_remove_recent_comments_style() {
 }
 
 // Pagination for paged posts, Page 1, Page 2, Page 3, with Next and Previous Links, No plugin
-function html5wp_pagination() {
+function _themenamewp_pagination() {
     global $wp_query;
     $big = 999999999;
     echo paginate_links( array(
@@ -201,18 +201,18 @@ function html5wp_pagination() {
     ) );
 }
 
-// Create 20 Word Callback for Index page Excerpts, call using html5wp_excerpt('html5wp_index');
-function html5wp_index( $length ) {
+// Create 20 Word Callback for Index page Excerpts, call using _themenamewp_excerpt('_themenamewp_index');
+function _themenamewp_index( $length ) {
     return 20;
 }
 
-// Create 40 Word Callback for Custom Post Excerpts, call using html5wp_excerpt('html5wp_custom_post');
-function html5wp_custom_post( $length ) {
+// Create 40 Word Callback for Custom Post Excerpts, call using _themenamewp_excerpt('_themenamewp_custom_post');
+function _themenamewp_custom_post( $length ) {
     return 40;
 }
 
 // Create the Custom Excerpts callback
-function html5wp_excerpt( $length_callback = '', $more_callback = '' ) {
+function _themenamewp_excerpt( $length_callback = '', $more_callback = '' ) {
     global $post;
     if ( function_exists( $length_callback ) ) {
         add_filter( 'excerpt_length', $length_callback );
@@ -228,9 +228,9 @@ function html5wp_excerpt( $length_callback = '', $more_callback = '' ) {
 }
 
 // Custom View Article link to Post
-function html5_blank_view_article( $more ) {
+function _themename_blank_view_article( $more ) {
     global $post;
-    return '... <a class="view-article" href="' . get_permalink( $post->ID ) . '">' . esc_html_e( 'View Article', 'html5blank' ) . '</a>';
+    return '... <a class="view-article" href="' . get_permalink( $post->ID ) . '">' . esc_html_e( 'View Article', '_themename' ) . '</a>';
 }
 
 // Remove Admin bar
@@ -239,7 +239,7 @@ function remove_admin_bar() {
 }
 
 // Remove 'text/css' from our enqueued stylesheet
-function html5_style_remove( $tag ) {
+function _themename_style_remove( $tag ) {
     return preg_replace( '~\s+type=["\'][^"\']++["\']~', '', $tag );
 }
 
@@ -250,7 +250,7 @@ function remove_thumbnail_dimensions( $html ) {
 }
 
 // Custom Gravatar in Settings > Discussion
-function html5blankgravatar ( $avatar_defaults ) {
+function _themename_gravatar ( $avatar_defaults ) {
     $myavatar                   = get_template_directory_uri() . '/img/gravatar.jpg';
     $avatar_defaults[$myavatar] = 'Custom Gravatar';
     return $avatar_defaults;
@@ -266,7 +266,7 @@ function enable_threaded_comments() {
 }
 
 // Custom Comments Callback
-function html5blankcomments( $comment, $args, $depth ) {
+function _themename_comments( $comment, $args, $depth ) {
     $GLOBALS['comment'] = $comment;
     extract( $args, EXTR_SKIP );
 
@@ -313,12 +313,12 @@ function html5blankcomments( $comment, $args, $depth ) {
 \*------------------------------------*/
 
 
-add_action( 'wp_print_scripts', 'html5blank_conditional_scripts' ); // Add Conditional Page Scripts
+add_action( 'wp_print_scripts', '_themename_conditional_scripts' ); // Add Conditional Page Scripts
 add_action( 'get_header', 'enable_threaded_comments' ); // Enable Threaded Comments
-add_action( 'init', 'register_html5_menu' ); // Add HTML5 Blank Menu
-add_action( 'init', 'create_post_type_html5' ); // Add our HTML5 Blank Custom Post Type
+add_action( 'init', 'register__themename_menu' ); // Add _themename Blank Menu
+add_action( 'init', 'create_post_type__themename' ); // Add our _themename Blank Custom Post Type
 add_action( 'widgets_init', 'my_remove_recent_comments_style' ); // Remove inline Recent Comment Styles from wp_head()
-add_action( 'init', 'html5wp_pagination' ); // Add our HTML5 Pagination
+add_action( 'init', '_themenamewp_pagination' ); // Add our _themename Pagination
 
 // Remove Actions
 remove_action( 'wp_head', 'feed_links_extra', 3 ); // Display the links to the extra feeds such as category feeds
@@ -330,7 +330,7 @@ remove_action( 'wp_head', 'rel_canonical' );
 remove_action( 'wp_head', 'wp_shortlink_wp_head', 10, 0 );
 
 // Add Filters
-add_filter( 'avatar_defaults', 'html5blankgravatar' ); // Custom Gravatar in Settings > Discussion
+add_filter( 'avatar_defaults', '_themename_gravatar' ); // Custom Gravatar in Settings > Discussion
 add_filter( 'body_class', 'add_slug_to_body_class' ); // Add slug to body class (Starkers build)
 add_filter( 'widget_text', 'do_shortcode' ); // Allow shortcodes in Dynamic Sidebar
 add_filter( 'widget_text', 'shortcode_unautop' ); // Remove <p> tags in Dynamic Sidebars (better!)
@@ -341,9 +341,9 @@ add_filter( 'wp_nav_menu_args', 'my_wp_nav_menu_args' ); // Remove surrounding <
 add_filter( 'the_category', 'remove_category_rel_from_category_list' ); // Remove invalid rel attribute
 add_filter( 'the_excerpt', 'shortcode_unautop' ); // Remove auto <p> tags in Excerpt (Manual Excerpts only)
 add_filter( 'the_excerpt', 'do_shortcode' ); // Allows Shortcodes to be executed in Excerpt (Manual Excerpts only)
-add_filter( 'excerpt_more', 'html5_blank_view_article' ); // Add 'View Article' button instead of [...] for Excerpts
+add_filter( 'excerpt_more', '_themename_blank_view_article' ); // Add 'View Article' button instead of [...] for Excerpts
 add_filter( 'show_admin_bar', 'remove_admin_bar' ); // Remove Admin bar
-add_filter( 'style_loader_tag', 'html5_style_remove' ); // Remove 'text/css' from enqueued stylesheet
+add_filter( 'style_loader_tag', '_themename_style_remove' ); // Remove 'text/css' from enqueued stylesheet
 add_filter( 'post_thumbnail_html', 'remove_thumbnail_dimensions', 10 ); // Remove width and height dynamic attributes to thumbnails
 add_filter( 'post_thumbnail_html', 'remove_width_attribute', 10 ); // Remove width and height dynamic attributes to post images
 add_filter( 'image_send_to_editor', 'remove_width_attribute', 10 ); // Remove width and height dynamic attributes to post images
@@ -352,35 +352,35 @@ add_filter( 'image_send_to_editor', 'remove_width_attribute', 10 ); // Remove wi
 remove_filter( 'the_excerpt', 'wpautop' ); // Remove <p> tags from Excerpt altogether
 
 // Shortcodes
-add_shortcode( 'html5_shortcode_demo', 'html5_shortcode_demo' ); // You can place [html5_shortcode_demo] in Pages, Posts now.
-add_shortcode( 'html5_shortcode_demo_2', 'html5_shortcode_demo_2' ); // Place [html5_shortcode_demo_2] in Pages, Posts now.
+add_shortcode( '_themename_shortcode_demo', '_themename_shortcode_demo' ); // You can place [_themename_shortcode_demo] in Pages, Posts now.
+add_shortcode( '_themename_shortcode_demo_2', '_themename_shortcode_demo_2' ); // Place [_themename_shortcode_demo_2] in Pages, Posts now.
 
 // Shortcodes above would be nested like this -
-// [html5_shortcode_demo] [html5_shortcode_demo_2] Here's the page title! [/html5_shortcode_demo_2] [/html5_shortcode_demo]
+// [_themename_shortcode_demo] [_themename_shortcode_demo_2] Here's the page title! [/_themename_shortcode_demo_2] [/_themename_shortcode_demo]
 
 /*------------------------------------*\
     Custom Post Types
 \*------------------------------------*/
 
-// Create 1 Custom Post type for a Demo, called HTML5-Blank
-function create_post_type_html5() {
-    register_taxonomy_for_object_type( 'category', 'html5-blank' ); // Register Taxonomies for Category
-    register_taxonomy_for_object_type( 'post_tag', 'html5-blank' );
-    register_post_type( 'html5-blank', // Register Custom Post Type
+// Create 1 Custom Post type for a Demo, called _themename-Blank
+function create_post_type__themename() {
+    register_taxonomy_for_object_type( 'category', '_themename-blank' ); // Register Taxonomies for Category
+    register_taxonomy_for_object_type( 'post_tag', '_themename-blank' );
+    register_post_type( '_themename-blank', // Register Custom Post Type
         array(
         'labels'       => array(
-            'name'               => esc_html( 'HTML5 Blank Custom Post', 'html5blank' ), // Rename these to suit
-            'singular_name'      => esc_html( 'HTML5 Blank Custom Post', 'html5blank' ),
-            'add_new'            => esc_html( 'Add New', 'html5blank' ),
-            'add_new_item'       => esc_html( 'Add New HTML5 Blank Custom Post', 'html5blank' ),
-            'edit'               => esc_html( 'Edit', 'html5blank' ),
-            'edit_item'          => esc_html( 'Edit HTML5 Blank Custom Post', 'html5blank' ),
-            'new_item'           => esc_html( 'New HTML5 Blank Custom Post', 'html5blank' ),
-            'view'               => esc_html( 'View HTML5 Blank Custom Post', 'html5blank' ),
-            'view_item'          => esc_html( 'View HTML5 Blank Custom Post', 'html5blank' ),
-            'search_items'       => esc_html( 'Search HTML5 Blank Custom Post', 'html5blank' ),
-            'not_found'          => esc_html( 'No HTML5 Blank Custom Posts found', 'html5blank' ),
-            'not_found_in_trash' => esc_html( 'No HTML5 Blank Custom Posts found in Trash', 'html5blank' ),
+            'name'               => esc_html( '_themename Blank Custom Post', '_themename' ), // Rename these to suit
+            'singular_name'      => esc_html( '_themename Blank Custom Post', '_themename' ),
+            'add_new'            => esc_html( 'Add New', '_themename' ),
+            'add_new_item'       => esc_html( 'Add New _themename Blank Custom Post', '_themename' ),
+            'edit'               => esc_html( 'Edit', '_themename' ),
+            'edit_item'          => esc_html( 'Edit _themename Blank Custom Post', '_themename' ),
+            'new_item'           => esc_html( 'New _themename Blank Custom Post', '_themename' ),
+            'view'               => esc_html( 'View _themename Blank Custom Post', '_themename' ),
+            'view_item'          => esc_html( 'View _themename Blank Custom Post', '_themename' ),
+            'search_items'       => esc_html( 'Search _themename Blank Custom Post', '_themename' ),
+            'not_found'          => esc_html( 'No _themename Blank Custom Posts found', '_themename' ),
+            'not_found_in_trash' => esc_html( 'No _themename Blank Custom Posts found in Trash', '_themename' ),
         ),
         'public'       => true,
         'hierarchical' => true, // Allows your posts to behave like Hierarchy Pages
@@ -390,7 +390,7 @@ function create_post_type_html5() {
             'editor',
             'excerpt',
             'thumbnail'
-        ), // Go to Dashboard Custom HTML5 Blank post for supports
+        ), // Go to Dashboard Custom _themename Blank post for supports
         'can_export'   => true, // Allows export in Tools > Export
         'taxonomies'   => array(
             'post_tag',
@@ -404,11 +404,11 @@ function create_post_type_html5() {
 \*------------------------------------*/
 
 // Shortcode Demo with Nested Capability
-function html5_shortcode_demo( $atts, $content = null ) {
+function _themename_shortcode_demo( $atts, $content = null ) {
     return '<div class="shortcode-demo">' . do_shortcode( $content ) . '</div>'; // do_shortcode allows for nested Shortcodes
 }
 
 // Demo Heading H2 shortcode, allows for nesting within above element. Fully expandable.
-function html5_shortcode_demo_2( $atts, $content = null ) {
+function _themename_shortcode_demo_2( $atts, $content = null ) {
     return '<h2>' . $content . '</h2>';
 }
