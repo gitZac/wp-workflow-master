@@ -40,7 +40,7 @@ const paths = { //refactored style paths.
         dest: 'dist/assets/images'
     },
     package:{
-        src: ['**/*', '!src', '!src/assets{,/**}', '!.vscode', '!node_modules{,/**}', '!packaged{,/**}', '!.babelrc', '!.gitignore', '!gulpfile.babel.js', '!package.json', '!package-lock.json' ],
+        src: ['**/*', '!src/assets{,/**}', '!.vscode', '!node_modules{,/**}', '!packaged{,/**}', '!.babelrc', '!.gitignore', '!gulpfile.babel.js', '!package.json', '!package-lock.json' ],
         dest:'packaged'
     }
 }
