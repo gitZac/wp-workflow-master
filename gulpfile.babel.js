@@ -30,7 +30,7 @@ export const reload = (done) => {
 
 const paths = { //refactored style paths.
     styles: {
-        src:['src/assets/scss/bundle.scss','src/assets/scss/admin.scss'],
+        src:['src/assets/scss/bundle.scss','src/assets/scss/admin.scss','src/assets/lib/bulma.min.css'],
         dest:'dist/assets/css' 
     },
     scripts: {

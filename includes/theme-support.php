@@ -288,4 +288,8 @@ function _themename_comments( $comment, $args, $depth ) {
     <?php endif; ?>
 <?php }
 
+add_action( 'get_header', 'enable_threaded_comments' ); // Enable Threaded Comments
+add_action( 'init', 'register__themename_menu' ); // Add _themename Blank Menu
+add_action( 'widgets_init', 'my_remove_recent_comments_style' ); // Remove inline Recent Comment Styles from wp_head()
+
 ?>
