@@ -38,8 +38,8 @@ const paths = { //refactored style paths.
         dest: 'dist/assets/js'
     },
     images: {
-        src: 'src/assets/images/**/*.{jpg,jpeg,png,svg,gif}',
-        dest: 'dist/assets/images'
+        src: 'src/assets/img/**/*.{jpg,jpeg,png,svg,gif}',
+        dest: 'dist/assets/img'
     },
     package:{
         src: ['**/*','!src{,/**}', '!.vscode', '!node_modules{,/**}', '!packaged{,/**}', '!.babelrc', '!.gitignore', '!gulpfile.babel.js', '!package.json', '!package-lock.json' ],
