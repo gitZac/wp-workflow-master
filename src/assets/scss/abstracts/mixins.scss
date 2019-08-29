@@ -1,0 +1,35 @@
+//Media Query Manager
+/* 
+    0-600 : Phone
+    600 - 700 : Phone - Landscape
+    700-900 : Tablet - Portrait
+    900-1200 : Tablet - Landscape
+    [1200 - 1800] : Normal Styles
+    
+    1800 + : Big Desktop
+*/
+
+//1em =16px
+//Use ems for screen reader purposes.
+
+@mixin respond($breakpoint){
+    @if $breakpoint == phone {
+        @media(max-width:37.5em){@content}; //600px
+    }
+    
+    @if $breakpoint == phone-land {
+        @media(max-width:43.75em){@content}; //700px
+    }
+
+    @if $breakpoint == tab-port {
+        @media(max-width:56.25em){@content}; //900px
+    }
+
+    @if $breakpoint == tab-landscape {
+        @media(max-width:75em){@content}; //1200px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media(min-width:112.5em){@content}; //1800px
+    }
+}

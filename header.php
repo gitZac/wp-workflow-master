@@ -21,24 +21,49 @@
 		<!-- wrapper -->
 		<div class="wrapper">
 
-			<!-- header -->
-			
-			<header class="header clear" role="banner">
+			<nav class="navbar" aria-label="main navigation">
 
-					<!-- logo -->
-					<div class="logo">
-						<a href="<?php echo esc_url( home_url() ); ?>">
-							<!-- svg logo - toddmotto.com/mastering-svg-use-for-a-retina-web-fallbacks-with-png-script -->
-							<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/logo.svg" alt="Logo" class="logo-img">
-						</a>
+				<div class="navbar-brand">
+					<a class="navbar-item" href="<?php echo esc_url( home_url( '/' ) );?>">
+						<!-- <img alt="My Logo" src="<?php //echo get_template_directory_uri();?>/images/my-logo.png"> -->
+						<img src="http://goconfluent.com/wp-content/uploads/2015/08/logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
+					</a>
+
+					<button class="button navbar-burger" data-target="primary-menu" aria-controls="primary-menu" aria-haspopup="true" aria-label="Menu Button" aria-pressed="false">
+						<span aria-hidden="true"></span>
+						<span aria-hidden="true"></span>
+						<span aria-hidden="true"></span>
+					</button>
+				</div>
+
+				<div id="primary-menu" class="navbar-menu">
+
+					<div class="navbar-end">
+						<?php wp_nav_menu(array(
+							'theme-location' => 'header-menu', //change it according to your register_nav_menus() function
+							'depth'		=>	3,
+							'menu'			=>	'NewNav',
+							'container'		=>	'',
+							'menu_class'		=>	'',
+							'items_wrap'		=>	'%3$s',
+							'walker'		=>	new Bulma_NavWalker(),
+							'fallback_cb'		=>	'Bulma_NavWalker::fallback'
+						));
+						?>
 					</div>
-					<!-- /logo -->
 
-					<!-- nav -->
-					<nav class="nav" role="navigation">
-						<?php _themename_nav(); ?>
-					</nav>
-					<!-- /nav -->
-
-			</header>
-			<!-- /header -->
+				</div>
+			</nav>
+			<section class="hero is-primary">
+				<div class="hero-body">
+					<div class="container">
+					<h1 class="title">
+						Confluent Health
+					</h1>
+					<h2 class="subtitle">
+						Bulma Starter Theme
+					</h2>
+					<p>Just another W04dP43ss Theme</p>
+					</div>
+				</div>
+			</section>

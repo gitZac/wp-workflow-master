@@ -9,6 +9,8 @@ require_once 'modules/is-debug.php';
 require_once 'includes/enqueue-assets.php';
 require_once 'includes/shortcodes.php';
 require_once 'includes/theme-support.php';
+require_once 'includes/classes/bulma-navwalker.php';
+
 
 /*------------------------------------*\
     Actions + Filters
