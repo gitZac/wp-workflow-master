@@ -21,7 +21,7 @@
   "homepage": "https://github.com/gitZac/workflow#readme",
   "dependencies": {
     "babel-loader": "^7.1.5",
-    "jquery": "^3.4.1"
+    "jquery": "^3.5.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
